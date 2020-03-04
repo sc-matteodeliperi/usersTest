@@ -28,10 +28,10 @@ Route::post('/users/store', 'UserController@store');
 //Read
 Route::get('/users/{$id}', 'UserController@show');
 //Update
-Route::put('/users{$id}/edit', 'UserController@edit');
+Route::put('/users/{$id}/edit', 'UserController@edit');
 Route::put('/users/update', 'UserController@update');
 //Delete
-Route::delete('/users{$id}/delete', 'UserController@destroy');
+Route::delete('/users/{$id}/delete', 'UserController@destroy');
 
 Auth::routes();
 
